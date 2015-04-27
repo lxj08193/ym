@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="checkBox" destination="iPg-a5-VhS" id="Uyb-Lu-EKQ"/>
+                <outlet property="scrollView" destination="19g-Zy-nu9" id="UUp-EO-JgT"/>
+                <outlet property="txtPhone" destination="f54-z2-E57" id="VyT-Df-HbG"/>
+                <outlet property="txtPwd" destination="ewK-xV-F4v" id="2vk-KX-pSp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV4-jp-D0F">
+                    <rect key="frame" x="0.0" y="19" width="320" height="37"/>
+                    <color key="backgroundColor" red="0.52549019610000003" green="0.72549019609999998" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19g-Zy-nu9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-pf-wUD">
+                            <rect key="frame" x="24" y="448" width="120" height="30"/>
+                            <state key="normal" title="登录" backgroundImage="用户_01.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="LoginTuch:" destination="-1" eventType="touchUpInside" id="b3r-KE-8VL"/>
+                                <action selector="LoginTuch:" destination="-2" eventType="touchUpInside" id="m1V-mn-ylG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOe-tw-EGU">
+                            <rect key="frame" x="176" y="448" width="120" height="30"/>
+                            <state key="normal" title="注册" backgroundImage="用户_01.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Register:" destination="-1" eventType="touchUpInside" id="Jx2-PE-3Z0"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="用户_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lum-Rc-WNX">
+                            <rect key="frame" x="113" y="165" width="90" height="90"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入你您的手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f54-z2-E57">
+                            <rect key="frame" x="90" y="311" width="206" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="TextField_DidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="kPp-ae-xGT"/>
+                                <action selector="UITextField_Edit:" destination="-1" eventType="editingDidBegin" id="HfY-EH-eKC"/>
+                                <action selector="UITextField_Edit_End:" destination="-1" eventType="editingDidEnd" id="BLL-XJ-a2r"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhj-2B-mJz">
+                            <rect key="frame" x="24" y="311" width="68" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MdU-Kr-5Tx">
+                            <rect key="frame" x="24" y="369" width="68" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册-1登陆_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="h3p-g3-5OL">
+                            <rect key="frame" x="44" y="315" width="29" height="30"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册-1登陆_06.png" translatesAutoresizingMaskIntoConstraints="NO" id="9AF-SQ-HYB">
+                            <rect key="frame" x="44" y="373" width="29" height="30"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbc-vk-LDe">
+                            <rect key="frame" x="24" y="415" width="91" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="记住登录密码">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuy-0m-yGb">
+                            <rect key="frame" x="230" y="413" width="66" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="忘记密码？">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册_023.png" translatesAutoresizingMaskIntoConstraints="NO" id="ArO-D7-EWA">
+                            <rect key="frame" x="113" y="165" width="90" height="90"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入您的密码（6-20位）" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewK-xV-F4v">
+                            <rect key="frame" x="90" y="369" width="206" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="TextField_DidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="F2r-Dd-dWx"/>
+                                <action selector="UITextField_Edit:" destination="-1" eventType="editingDidBegin" id="MeL-Lf-oLi"/>
+                                <action selector="UITextField_Edit_End:" destination="-1" eventType="editingDidEnd" id="Oi2-EQ-faT"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPg-a5-VhS">
+                            <rect key="frame" x="24" y="418" width="19" height="19"/>
+                            <state key="normal" image="icon_check_alt1.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="CheckBoxThuch:" destination="-1" eventType="touchUpInside" id="8T3-ow-6ub"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="185" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="0登陆注册-1登陆_03.png" width="60" height="60"/>
+        <image name="0登陆注册-1登陆_06.png" width="60" height="60"/>
+        <image name="0登陆注册_023.png" width="180" height="180"/>
+        <image name="icon_check_alt1.png" width="32" height="32"/>
+        <image name="用户_01.png" width="345" height="70"/>
+        <image name="用户_1.png" width="100" height="101"/>
+    </resources>
+</document>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mall-content{width:720px;height:1134px; background:#FFF; position:relative;}
+.seller-content{width:680px; padding:20px;height:2160px; background:#FFF; position:relative;}
+.seller-content img{float:left; margin-top:45px;}
+
+
+
+.good-select{ background:#dfdfdf; width:720px; height:60px;}
+.good-text{width:179px; height:60px;line-height:60px; text-align:center; color:#000; float:left;}
+
+.good-select img{float:left;}
+
+.good-box{width:680px; padding:20px; height:505px;}
+.mall-textmore{line-height:30px; overflow:hidden; height:auto; float:left;width:680px; background:url(images/images/1index-mall_03.png); border-radius:3px; border:#000 1px solid; margin:20px;}
+
+.seller-good{ position:absolute;top:300px; left:20px;line-height:30px; overflow:hidden; height:280;width:680px;}
+.seller-good img{float:left;}
+
+

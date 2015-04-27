@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterInfoViewController">
+            <connections>
+                <outlet property="scrollView" destination="Tfz-Qm-9oL" id="FS9-2P-izM"/>
+                <outlet property="txtPhone" destination="vat-8t-p87" id="wfQ-s0-cPU"/>
+                <outlet property="txtPwd" destination="0lV-nl-051" id="mTg-uI-73Y"/>
+                <outlet property="txtRePwd" destination="gOn-i6-K35" id="1l4-Gi-3hv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctv-fy-zJv">
+                    <rect key="frame" x="0.0" y="19" width="30" height="37"/>
+                    <state key="normal" title="&lt;">
+                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BackUp:" destination="-1" eventType="touchUpInside" id="Oyx-YV-We2"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-Qm-9oL">
+                    <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="用户_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ywt-DZ-XyI">
+                            <rect key="frame" x="113" y="97" width="90" height="90"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入你您的手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vat-8t-p87">
+                            <rect key="frame" x="90" y="243" width="206" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="TextField_DidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="rr7-Ri-dVY"/>
+                                <action selector="UITextField_Edit:" destination="-1" eventType="editingDidBegin" id="m1O-jp-RBw"/>
+                                <action selector="UITextField_Edit_End:" destination="-1" eventType="editingDidEnd" id="si9-6t-KSS"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW5-5n-cwG">
+                            <rect key="frame" x="24" y="243" width="68" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册-1登陆_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="E1b-3p-Bcm">
+                            <rect key="frame" x="44" y="247" width="29" height="30"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqz-iC-G09">
+                            <rect key="frame" x="24" y="419" width="272" height="30"/>
+                            <state key="normal" title="下一步" backgroundImage="用户_01.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Register:" destination="-2" eventType="touchUpInside" id="Q3v-ll-C0r"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="用户_1(1).png" translatesAutoresizingMaskIntoConstraints="NO" id="NvQ-Wx-hUo">
+                            <rect key="frame" x="113" y="97" width="90" height="90"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="重复您的密码（6-20位）" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOn-i6-K35">
+                            <rect key="frame" x="90" y="363" width="206" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="TextField_DidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="fPe-oL-XnX"/>
+                                <action selector="UITextField_Edit:" destination="-1" eventType="editingDidBegin" id="c0p-H7-ZwU"/>
+                                <action selector="UITextField_Edit_End:" destination="-1" eventType="editingDidEnd" id="lR1-Fh-G2Z"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-SE-c9b">
+                            <rect key="frame" x="24" y="363" width="68" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册-1登陆_06.png" translatesAutoresizingMaskIntoConstraints="NO" id="w0S-uu-zVT">
+                            <rect key="frame" x="44" y="367" width="29" height="30"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="输入您的密码（6-20位）" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-nl-051">
+                            <rect key="frame" x="90" y="303" width="206" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="TextField_DidEndOnExit:" destination="-1" eventType="editingDidEndOnExit" id="OUu-5f-UFH"/>
+                                <action selector="UITextField_Edit:" destination="-1" eventType="editingDidBegin" id="NBk-nY-GTb"/>
+                                <action selector="UITextField_Edit_End:" destination="-1" eventType="editingDidEnd" id="TKw-Sn-sYj"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMS-y9-GG4">
+                            <rect key="frame" x="24" y="303" width="68" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0登陆注册-1登陆_06.png" translatesAutoresizingMaskIntoConstraints="NO" id="p7b-u6-Npc">
+                            <rect key="frame" x="44" y="307" width="29" height="30"/>
+                        </imageView>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="0登陆注册-1登陆_03.png" width="60" height="60"/>
+        <image name="0登陆注册-1登陆_06.png" width="60" height="60"/>
+        <image name="用户_01.png" width="345" height="70"/>
+        <image name="用户_1(1).png" width="180" height="180"/>
+        <image name="用户_2.png" width="180" height="180"/>
+    </resources>
+</document>

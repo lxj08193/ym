@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.release{width:708px;padding:6px;height:auto;background:#ebebeb;}
+
+.release-bx{width:520px;height:100px; margin:20px auto; background:#ef8e92; border-radius:10px;}
+.release-bx img{float:left; margin-top:12px; margin-left:20px;}
+
+.release-box{width:708px;margin-top:80px;height:160px; background:#ebebeb; text-align:center; line-height:80px;}
+
+.release-advert-box{width:720px;height:570px; background:#FFF;}
+.advert-box{width:708px;height:90px; background:#FFF;}
+.release-advert-box img{float:left; margin-top:5px; margin-left:20px;}
+
+.precision-box{width:720px;height:200px; background:#ebebeb;}
+
+.merchant-text{overflow:hidden; height:70px; float:left;line-height:70px;width:120px; margin-left:40px; color:#999;}
+.merchant-textmore{overflow:hidden; height:70px; float:left; margin-left:40px; color:#000;line-height:70px;width:400px;}
+
+.comm-box{width:359px;height:100px; background:#fff; float:left; text-align:center; line-height:100px;}

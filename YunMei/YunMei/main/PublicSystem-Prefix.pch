@@ -1,0 +1,49 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#import <TargetConditionals.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//ddmenu
+#define kMenuDisplayedWidth 240.0f//
+
+//颜色
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//5&5s高
+#define IPHONE_HEIGHT_Proportion ([UIScreen mainScreen].bounds.size.height/568)
+
+//获取设备物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+//图片
+#define fileWithName(name) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:name ofType:@"png"]]
+
+//IMSI
+#define PRIVATE_PATH  "/System/Library/PrivateFrameworks/CoreTelephony.framework/CoreTelephony"
+
+//服：220.165.9.32  //龚：192.168.0.52  //贾：192.168.0.56  //杨：192.168.0.73  //梁叶飞：192.168.0.56  // //http://www.xfthink.com"  https://www.xfthink.com:8443"
+#define LOCALHOST "http://www.xfthink.com"
+#define LOCALHOST_htts "https://192.168.0.56:8443"
+
+
+#define UserConfig_List_path [[NSBundle mainBundle] pathForResource:@"UserInfo" ofType:@"plist"]
+#define UserConfig_List_path_name @"UserInfo.plist"
+
+#define UserConfig_List_path_Massage @"UserMassage.plist"

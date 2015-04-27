@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.content-personal{width:720px; height:1014px;background:#ebebeb;}
+.install-password{width:628px;padding:46px;height:360px; background:#FFF;}
+
+.install-password img{float:left;}
+.password-input{width:460px; padding-left:5px;height:50px;margin-bottom:30px;float:left;}
+
+.personal-order{width:700px;height:80px;padding:10px 20px;}
+
+.personal-order img{float:left;}
+.order-top{width:225px;height:80px; border-radius:3px; line-height:80px; text-align:center;float:left; font-size:30px;}
+
+.order-text{width:670px; padding-left:10px; height:50px; line-height:50px;float:left;}
+.order-textmore{ margin-left:10px;width:450px; line-height:30px; overflow:hidden; height:100px; float:left;}
+
+
+.address-name{width:155px; height:50px; line-height:50px; font-size:28px; float:left;}
+
+.complain{width:238px;height:80px;float:left; line-height:80px; font-size:30px; text-align:center;}
+
+
+

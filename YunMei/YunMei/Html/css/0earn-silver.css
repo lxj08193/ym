@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.earn-silver-box{width:720px;height:1134px; background:#FFF;}
+
+.silver-textmore{width:450px;overflow:hidden; height:70px; float:left; line-height:70px;margin-left:40px;}
+
+.silver-box{width:720px;height:80px; background:#FFF;}
+
+.login-input{width:359px; height:64px; line-height:70px; background-position:left; background-repeat:no-repeat; padding-left:135px;border:3px #a0a0a0 solid; margin:30px 110px 0 110px;}
+
+.input-password{width:500px; height:30px; line-height:30px; text-align:right; color:#666; margin:0 110px;}
+
+.earn-logon{width:708px; height:532px; padding:6px;}
+.aspan{text-align:center; color:#999; margin-top:100px; width:351px; height:60px;}
+
+.apic{ width:351px; height:260px; background:#FFF; float:left; margin-bottom:6px;}
+
+.treasury-text{overflow:hidden; height:50px; float:left; line-height:50px;width:200px; margin-left:40px;}
+
+.treasury-box{width:359px;height:50px; background:#fff; float:left; text-align:center; line-height:80px;}
+
+
+

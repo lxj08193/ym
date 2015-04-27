@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.info{width:660px; height:790px;padding:24px; background:#FFF;}
+.info-text,.info-input{height:50px; line-height:50px; font-size:30px;float:left;margin-bottom:30px;}
+.info-text{width:150px;}
+.info-input{width:500px;}
+
+
+
+

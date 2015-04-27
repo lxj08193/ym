@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+.shopping{ width:720px; height:990px; background:#FFF;}
+
+.shopping-box{width:700px;height:auto; margin:0 auto;}
+
+.shopping-b{ width:720px; height:1134px; background:#FFF;}
+.shopping-bx{width:700px;height:140px; margin:0 auto;}
+.shopping-bx img{float:left; margin:10px 80px;}
+
+.shopping-box img{float:left;}
+
+.shopping-style{width:36px; height:36px;margin-top:6px;float:left; text-align:center;}
+
+.shopping-text{width:600px; padding-left:4px; height:28px; line-height:28px;float:left;}
+
+.shopping-textmore{ margin-left:10px;width:450px; line-height:30px; overflow:hidden; height:70px; float:left;}
+
+.shopping-button{width:32px; height:32px;float:left; margin-top:10px; border:none}
+
+
+
